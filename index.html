@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gautham Krishna P | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">GK</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h4>Hi, my name is</h4>
+            <h1>Gautham Krishna P.</h1>
+            <h2>I build things for the web.</h2>
+            <p>I'm an Electronics and Communication Engineer with a passion for web development and programming. I specialize in building exceptional digital experiences with Django, Python, and modern web technologies.</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <div class="line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm Gautham, a passionate developer based in India. I recently graduated with a BTech in Electronics and Communications from APJ Abdul Kalam Technological University.</p>
+                <p>My journey in technology started with electronics, but I quickly discovered my love for programming and web development. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.</p>
+                <p>Here are a few technologies I've been working with recently:</p>
+                <div class="skills">
+                    <span class="skill">Python</span>
+                    <span class="skill">Django</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">HTML/CSS</span>
+                    <span class="skill">SQL</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">C/C++</span>
+                    <span class="skill">Matlab</span>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="assets/images/20240223_144749.jpg" alt="Gautham Krishna P">
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="section-title">
+            <h2>Experience</h2>
+            <div class="line"></div>
+        </div>
+        
+        <div class="experience-tabs">
+            <button class="tab-btn active" data-tab="tinkerhub">Tinkerhub</button>
+            <button class="tab-btn" data-tab="yip">YIP</button>
+            <button class="tab-btn" data-tab="rs-spectra">RS Spectra</button>
+        </div>
+        <div class="tab-content active" id="tinkerhub">
+            <h3 class="job-title">Python Learning Facilitator Intern <span class="job-company">@ Tinkerhub</span></h3>
+            <p class="job-duration">6 Months</p>
+            <p class="job-description">Facilitated Python learning sessions and helped students grasp programming concepts.</p>
+        </div>
+        <div class="tab-content" id="yip">
+            <h3 class="job-title">Intern <span class="job-company">@ YIP 5.0 | KDISC</span></h3>
+            <p class="job-duration">2 months</p>
+            <p class="job-description">Conducted orientations for various college students towards entrepreneurship and teamwork.</p>
+        </div>
+        <div class="tab-content" id="rs-spectra">
+            <h3 class="job-title">Project Coordinator <span class="job-company">@ RS Spectra Technical Solutions</span></h3>
+            <p class="job-duration">7 months</p>
+            <p class="job-description">Coordinated technical projects and ensured smooth execution of various initiatives.</p>
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-title">
+            <h2>Projects</h2>
+            <div class="line"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/Ticketing.png" alt="Invento Ticketing">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Invento Ticketing</h3>
+                    <p class="project-description">A ticket monitoring platform built with Django and basic HTML/CSS.</p>
+                    <div class="project-tech">
+                        <span class="tech-item">Django</span>
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">HTML/CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/gauthamkrishna1312/invento" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/IMGpsr.png" alt="CLI Tool">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">CLI Image Processor</h3>
+                    <p class="project-description">Command Line tool built in Python to process images using the Pillow library.</p>
+                    <div class="project-tech">
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">Pillow</span>
+                        <span class="tech-item">CLI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/gauthamkrishna1312/img_processor" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/PeopleConnect.png" alt="People Connect">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">People Connect</h3>
+                    <p class="project-description">A clone of a basic social media web app built with Django.</p>
+                    <div class="project-tech">
+                        <span class="tech-item">Django</span>
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">HTML/CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/gauthamkrishna1312/peopleConnect" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/Todo.png" alt="TODO App">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">TODO App</h3>
+                    <p class="project-description">A todo app built with Django where users can create accounts and manage tasks with due dates.</p>
+                    <div class="project-tech">
+                        <span class="tech-item">Django</span>
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">HTML/CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/gauthamkrishna1312/todo_app_django/" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/T2Voice.png" alt="Text to Voice">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Text to Voice</h3>
+                    <p class="project-description">A Python tool that converts text inputs in English to voice.</p>
+                    <div class="project-tech">
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">Text-to-Speech</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/gauthamkrishna1312/tex_to_voice" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+            <div class="line"></div>
+        </div>
+        <div class="contact-text">
+            <p>I'm currently looking for new opportunities in web development and programming. Whether you have a question or just want to say hi, I'll do my best to get back to you!</p>
+        </div>
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/gauthamkrishna1312" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/gautham-krishna-p-2bb4781b3/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@ctechguy997" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/Gautham90904358" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="copyright">
+            <p>Designed & Built by Gautham Krishna P</p>
+        </div>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+</html>
