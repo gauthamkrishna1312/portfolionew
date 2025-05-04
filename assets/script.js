@@ -72,9 +72,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Form Submission
 // Initialize EmailJS
 
+/*import dotenv from 'dotenv';
+dotenv.config();
+
+
+const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY;
+*/
 
 (function() {
-    emailjs.init(env.EMAILJS_PUBLIC_KEY);
+    emailjs.init(EMAILJS_PUBLIC_KEY);
 }
 )();
 const contactForm = document.getElementById('contactForm');
@@ -89,7 +97,7 @@ contactForm.addEventListener('submit', function(e) {
   submitBtn.disabled = true;
 
   // Send the email
-  emailjs.sendForm(env.EMAILJS_SERVICE_ID, env.EMAILJS_TEMPLATE_ID, this)
+  emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
     .then(() => {
       // Success message
       alert('Thank you for your message! I will get back to you soon.');
