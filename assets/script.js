@@ -69,18 +69,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Scroll to top functionality
+document.getElementById('gk-logo-top').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+    
+    // Optional: Add focus to #top for better accessibility
+    document.getElementById('top').setAttribute('tabindex', '-1');
+    document.getElementById('top').focus();
+});
+
+
 // Form Submission
 // Initialize EmailJS
+/*
+import emailjs from '@emailjs/browser';
 
-require('dotenv').config();
-const EMAILJS_SERVICE_IDD = process.env.EMAILJS_SERVICE_ID;
-const EMAILJS_TEMPLATE_IDD = process.env.EMAILJS_TEMPLATE_ID;
-const EMAILJS_PUBLIC_KEYD = process.env.EMAILJS_PUBLIC_KEY;
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-(function() {
-    emailjs.init(EMAILJS_PUBLIC_KEYD);
-}
-)();
+emailjs.init(EMAILJS_PUBLIC_KEY);
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', function(e) {
@@ -93,7 +105,7 @@ contactForm.addEventListener('submit', function(e) {
   submitBtn.disabled = true;
 
   // Send the email
-  emailjs.sendForm(EMAILJS_SERVICE_IDD, EMAILJS_TEMPLATE_IDD, this)
+  emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
     .then(() => {
       // Success message
       alert('Thank you for your message! I will get back to you soon.');
@@ -110,6 +122,7 @@ contactForm.addEventListener('submit', function(e) {
       submitBtn.disabled = false;
     });
 });
+*/
 
 
 /*
