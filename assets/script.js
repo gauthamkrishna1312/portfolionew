@@ -73,12 +73,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Initialize EmailJS
 
 require('dotenv').config();
-const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
-const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
-const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY;
+const EMAILJS_SERVICE_IDD = process.env.EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_IDD = process.env.EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEYD = process.env.EMAILJS_PUBLIC_KEY;
 
 (function() {
-    emailjs.init(EMAILJS_PUBLIC_KEY);
+    emailjs.init(EMAILJS_PUBLIC_KEYD);
 }
 )();
 const contactForm = document.getElementById('contactForm');
@@ -93,7 +93,7 @@ contactForm.addEventListener('submit', function(e) {
   submitBtn.disabled = true;
 
   // Send the email
-  emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
+  emailjs.sendForm(EMAILJS_SERVICE_IDD, EMAILJS_TEMPLATE_IDD, this)
     .then(() => {
       // Success message
       alert('Thank you for your message! I will get back to you soon.');
